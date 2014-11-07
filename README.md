@@ -92,10 +92,10 @@ wget https://grsecurity.net/stable/grsecurity-3.0-3.2.61-201407232156.patch
 wget https://grsecurity.net/stable/grsecurity-3.0-3.2.61-201407232156.patch.sig
 ```
 
-Download the Ubuntu kernel overlay.
+Download the Ubuntu kernel overlay (only the HEAD).
 
 ```
-git clone git://kernel.ubuntu.com/ubuntu/ubuntu-precise.git
+git clone --depth=1 git://kernel.ubuntu.com/ubuntu/ubuntu-precise.git
 ```
 
 Transfer all the files in the *grsec* directory from the online server
